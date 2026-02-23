@@ -1,0 +1,68 @@
+# =========================
+# SYSTEM FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# XAMPP / LOCAL ENV
+# =========================
+/xampp/
+/phpmyadmin/
+
+# =========================
+# LOG FILES
+# =========================
+*.log
+error_log
+
+# =========================
+# CACHE
+# =========================
+cache/
+tmp/
+temp/
+
+# =========================
+# UPLOAD FILES (optional)
+# =========================
+uploads/
+upload/
+
+# kalau mau upload tetap masuk git, hapus bagian ini
+
+# =========================
+# ENV FILE (PENTING)
+# =========================
+.env
+
+# =========================
+# DATABASE FILE
+# =========================
+*.sql
+
+# kalau mau backup database tetap masuk git, hapus ini
+
+# =========================
+# NODE MODULES (kalau ada)
+# =========================
+node_modules/
+
+# =========================
+# VSCODE
+# =========================
+.vscode/
+
+# =========================
+# GIT LOCK
+# =========================
+.git/index.lock
+
+# =========================
+# COMPOSER
+# =========================
+vendor/
+
+# kecuali composer.json & composer.lock
+!composer.json
+!composer.lock
