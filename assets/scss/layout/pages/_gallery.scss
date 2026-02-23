@@ -1,0 +1,224 @@
+@use '../../utils/' as * ;
+
+.vl-gallery-btn.text-end {
+    @media #{$md,$xs} {
+        text-align: start !important;
+        margin-top: 15px;
+   }
+}
+
+.vl-single{
+    &-box {
+        overflow: hidden;
+        border-radius: 8px;
+        position: relative;
+        transition: .3s;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0%;
+            background: #181713;
+            opacity: .7;
+            transition: .6s;
+        }
+        &:hover{
+            .search-ic span{
+                top: 50%;
+                transition: .6s;
+                opacity: 1;
+                visibility: visible;
+            }
+            &::after {
+                width: 100%;
+                transition: .6s;
+            }
+            & img{
+                transform: scale(1.1);
+                transition: .3s;
+            }
+        }
+        & img {
+            height: 370px;
+            object-fit: cover;
+            transition: .3s;
+            border-radius: 8px;
+            @media #{$xs}{
+                height: 250px;
+            }
+        }
+        .search-ic{
+            &  span {
+                height: 70px;
+                width: 70px;
+                display: inline-block;
+                background: var(--ztc-text-text-4);
+                line-height: 70px;
+                text-align: center;
+                font-size: 32px;
+                border-radius: 50px;
+                position: absolute;
+                top: 70%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transform: translateY(-50%);
+                color: var(--ztc-text-text-3);
+                z-index: 1;
+                transition: .6s;
+                opacity: 0;
+                visibility: visible;
+                cursor: pointer;
+                & img{
+                    height: 36px;
+                }
+            }
+            &-7{
+                & span{
+                    background: var(--ztc-text-text-19);
+                    & img{
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+            &-8{
+                & span{
+                    background: var(--ztc-text-text-23);
+
+                    & img{
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+            &-10{
+                & span{
+                    background: var(--ztc-text-text-28);
+
+                    & img{
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+        &-8{
+            & img {
+                height: 250px;
+                object-fit: cover;
+                transition: .3s;
+                border-radius: 8px;
+            }
+        }
+        &-lager-thumb{
+            & img{
+                height: 530px;
+                object-fit: cover;
+                transition: .3s;
+                border-radius: 8px;
+            }
+        }
+        &-iner{
+            &-h420{
+                & img{
+                    height: 420px;
+                }
+            }
+        }
+    }
+}
+
+.vl-single-box{
+    &-inner{
+        &-h420{
+            & img {
+                height: 420px;
+            }
+        }
+        &-h250{
+            & img {
+                height: 250px;
+            }
+        }
+        &-h530{
+            & img {
+                height: 530px;
+            }
+        }
+        &-h270{
+            & img {
+                height: 270px;
+            }
+        }
+    }
+}
+
+
+.vl-gallery-shape-7 {
+    position: absolute;
+    right: -123px;
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.vl-single-box:hover .vl-gallery-shape-7{
+    opacity: 1;
+    transition: 0.3s;
+    right: -42px;
+    z-index: 1;
+    top: -56px;
+}
+
+
+// Gallery Home-3
+
+.vl-gallery3{
+    
+    & .vl-section-title3{
+        & .title{
+            font-size: var(--ztc-font-size-font-s44);
+            line-height: var(--ztc-specing-height54);
+            padding-top: 16px;
+            padding-bottom: 0px;
+            @media #{$xs}{
+                font-size: var(--ztc-font-size-font-s30);
+                line-height: var(--ztc-specing-height40);
+            }
+        }
+    }
+    & .vl-gallery-sm-thumb{
+        border-radius: 8px;
+        overflow: hidden;
+        & img{
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    & .vl-gallery-large-thumb{
+        margin-top:60px;
+        border-radius: 8px;
+        overflow: hidden;
+        & img{
+            height: 416px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+// Gallery Shape  Home 7
+
+.vl-gallery-shape-7{
+    position: absolute;
+    right: 0;
+}
+
+// gallery btn
+.vl-gallery-btn-9{
+    text-align: end;
+    @media #{$md,$xs}{
+        text-align: start;
+    }
+}

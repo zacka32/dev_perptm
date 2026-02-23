@@ -1,0 +1,272 @@
+@use '../../utils/' as * ;
+
+/*============= WORK CSS AREA ===============*/
+.vl-work5{
+    background: var(--ztc-text-text-3);
+    & .vl-work-content{
+        & .vl-section-title5{
+            & .subtitle{
+                color: var(--ztc-text-text-1);
+                background: rgba(255, 255, 255, 0.10);
+            }
+            & .title{
+                color: var(--ztc-text-text-1);
+            }
+            & .para{
+                color: rgba(255,255,255,.8);
+            }
+        }
+        & .vl-work-thumb{
+            margin-top:48px;
+            & img{
+                border-radius: 8px;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+    }
+    & .vl-single-work-box{
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.10);
+        padding: 27px;
+        margin-bottom:20px;
+        transition: .3s;
+        &.active{
+            background:var(--ztc-text-text-6);
+            transition: .3s;
+        }
+        & .work-box-flx{
+            display: flex;
+            @media #{$xs}{
+                display:block;
+            }
+            & .num{
+                & span{
+                    color: rgba(255, 255, 255, 0.10);
+                    font-size: var(--ztc-font-size-font-s60);
+                    line-height: var(--ztc-specing-height60);
+                    font-family: var(--ztc-family-font2);
+                    font-weight: var(--ztc-weight-bold);
+                    margin-right: 22px;
+                    transition: .3s;
+                    @media #{$xs}{
+                        display:block;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            & .content{
+                & .title{
+                    color: var(--ztc-text-text-1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    line-height: var(--ztc-specing-height20);
+                    font-family: var(--ztc-family-font2);
+                    font-weight: var(--ztc-weight-bold);
+                    transition: 0.3s;
+                    padding-bottom: 16px;
+                    @media #{$lg,$md,$xs}{
+                        line-height: var(--ztc-specing-height30);
+                    }
+                }
+                & .para{
+                    color: rgba(255, 255, 255, 0.80);
+                    font-size: var(--ztc-font-size-font-s18);
+                    line-height: var(--ztc-specing-height28);
+                    font-family: var(--ztc-family-font1);
+                    font-weight: var(--ztc-weight-semibold);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    & .ttsingle-box{
+        background: red;
+        padding: 28px;
+        text-align: center;
+        &.active{
+            background: green;
+        }
+    }
+}
+
+
+.vl-work-thumb-wrap-6{
+    & .vl-work-thumb-1{
+        & img{
+            height: 322px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+}
+
+.vl-work-iconbox-6{
+    background: var(--ztc-text-text-17);
+    border-radius: 8px;
+    padding: 32px 24px;
+    transition: .3s;
+    @media #{$xl}{
+        padding: 20px;
+    }
+    & .vl__work{
+        &-icon{
+            display: inline-block;
+            & span{
+                background: var(--ztc-text-text-1);
+                height: 70px;
+                width: 70px;
+                display: inline-block;
+                line-height: 70px;
+                text-align: center;
+                border-radius: 50px;
+                transition: .3s;
+            }
+            &-num-top{
+                & span{
+                    background: var(--ztc-bg-bg-3);
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                    border-radius: 50px;
+                    color: var(--ztc-text-text-3);
+                    display: inline-block;
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transition: .3s;
+                }
+            }
+        }
+        &-content{
+            & .title{
+                & a{
+                    color: var(--ztc-text-text-3);
+                    font-size: var(--ztc-font-size-font-s20);
+                    line-height: var(--ztc-specing-height20);
+                    font-family: var(--ztc-family-font2);
+                    font-weight: var(--ztc-weight-bold);
+                    padding-top: 24px;
+                    padding-bottom: 16px;
+                    transition: .3s;
+                    display: inline-block;
+                }
+            }
+            & p{
+                font-size: var(--ztc-font-size-font-s18);
+                line-height: var(--ztc-specing-height26);
+                font-weight: var(--ztc-weight-medium);
+                color: var(--ztc-text-text-18);
+                transition: .3s;
+            }
+        }
+    }
+    &:hover{
+        background: var(--ztc-text-text-6);
+        transition: .3s;
+        & .vl__work-icon{
+            & span{
+                transform: rotateY(-180deg);
+                transition: .3s;
+            }
+        }
+        & .vl__work-content{
+            & .title{
+                & a{
+                    color: var(--ztc-text-text-1);
+                    transition: .3s;
+                }
+            }
+            & p{
+                color: rgba(255, 255, 255, 0.90);
+                transition: .3s;
+            }
+        }
+    }
+}
+
+
+
+// work icon box home 10
+
+.vl-work-icon-box-10{
+    border-radius: 8px;
+    border: 1px solid rgba(16, 22, 8, 0.10);
+    transition: .3s;
+    padding: 28px 24px;
+    position: relative;
+    & .icon{
+        & span{
+            background:#F4F9ED;
+            height: 80px;
+            width: 80px;
+            border-radius: 50px;
+            display: inline-block;
+            line-height: 80px;
+            text-align: center;
+            transition: .3s;
+        }
+    }
+    & .number{
+        & span{
+            font-size: var(--ztc-font-size-font-s44);
+            line-height: var(--ztc-specing-height44);
+            font-weight: var(--ztc-weight-bold);
+            color: #E7E8E6;
+            font-family: var(--ztc-family-font2);
+            position: absolute;
+            top: 28px;
+            right: 24px;
+            transition: .3s;
+        }
+    }
+    & .title{
+        & a{
+            font-size: var(--ztc-font-size-font-s20);
+            line-height: var(--ztc-specing-height20);
+            font-weight: var(--ztc-weight-bold);
+            color: var(--ztc-text-text-27);
+            padding-top: 32px;
+            padding-bottom: 16px;
+            transition: .3s;
+            display: inline-block;
+        }
+    }
+    & p{
+        color: #51544D;
+        font-size: var(--ztc-font-size-font-s18);
+        line-height: var(--ztc-specing-height26);
+        font-weight: var(--ztc-weight-medium);
+    }
+    &:hover{
+        background: var(--ztc-text-text-29);
+        transition: .3s;
+        border: 1px solid var(--ztc-text-text-29);
+        & .icon{
+            & span{
+                background: #F4F9ED;
+                transition: .3s;
+            }
+        }
+        & .number{
+            & span{
+                color: var(--ztc-text-text-27);
+                transition: .3s;
+            }
+        }
+    }
+}
+
+.vl-work-text-10{
+    & p{
+        float: right;
+    }
+}
+
+
+/*============= WORK CSS AREA ===============*/
+
+
+
+

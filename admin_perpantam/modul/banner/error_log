@@ -1,0 +1,9 @@
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: image1 in /home/griyail2/public_html/admin_griya/modul/banner/aksi_banner.php on line 103
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: image1 in /home/griyail2/public_html/admin_griya/modul/banner/aksi_banner.php on line 104
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: image1 in /home/griyail2/public_html/admin_griya/modul/banner/aksi_banner.php on line 105
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: image1 in /home/griyail2/public_html/admin_griya/config/fungsi_thumb.php on line 51
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: nama_banner in /home/griyail2/public_html/admin_griya/modul/banner/aksi_banner.php on line 111
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: title in /home/griyail2/public_html/admin_griya/modul/banner/aksi_banner.php on line 112
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: deskripsi in /home/griyail2/public_html/admin_griya/modul/banner/aksi_banner.php on line 112
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: posisi in /home/griyail2/public_html/admin_griya/modul/banner/aksi_banner.php on line 113
+[18-Nov-2025 13:24:29 Asia/Jakarta] PHP Notice:  Undefined index: id_banner in /home/griyail2/public_html/admin_griya/modul/banner/aksi_banner.php on line 115

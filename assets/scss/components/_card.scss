@@ -1,0 +1,95 @@
+@use '../utils' as *;
+
+
+.vl-card-thumb-wrap{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+    padding: 40px 32px;
+    &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        background: rgba(16, 22, 8, 0.80);
+        z-index: -1;
+    }
+    & .title{
+        color: var(--ztc-text-text-1);
+        font-size: var(--ztc-font-size-font-s32);
+        line-height: var(--ztc-specing-height32);
+        font-family: var(--ztc-family-font2);
+        font-weight: var(--ztc-weight-bold);
+        transition: .3s;
+    }
+    & p{
+        color: var(--ztc-text-text-1);
+        font-size: var(--ztc-font-size-font-s18);
+        line-height: var(--ztc-specing-height26);
+        font-weight: var(--ztc-weight-medium);
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+    & .primary-btn-10{
+        background: var(--ztc-text-text-1);
+        color: var(--ztc-text-text-27);
+        transition: .3s;
+        & span{
+            & img{
+                filter: invert(1);
+                transition: .3s;
+            }
+        }
+        &:hover{
+            background: var(--ztc-text-text-28);
+            color: var(--ztc-text-text-1);
+            transition: .3s;
+            & span{
+                & img{
+                    filter: brightness(0) invert(1);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+    &.sm-card{
+        margin-right: -50px;
+        margin-left: -50px;
+        padding: 56px 24px;
+        background: var(--ztc-text-text-27);
+        @media #{$lg,$md, $xs} {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        & .title{
+            font-size: var(--ztc-font-size-font-s44);
+            line-height: var(--ztc-specing-height44);
+            padding-bottom: 16px;
+            padding-top: 32px;
+        }
+        & .desgenitation{
+            color: rgba(255, 255, 255, 0.90);
+            font-size: var(--ztc-font-size-font-s18);
+            line-height: var(--ztc-specing-height18);
+            font-weight: var(--ztc-weight-medium);}
+    }
+    &.margin-right{
+        margin-right: 53px;
+        @media #{$lg,$md, $xs} {
+            margin-right: 0;
+        }
+    }
+    &.margin-left{
+        margin-left: 53px;
+        @media #{$lg,$md, $xs} {
+            margin-left: 0;
+        }
+    }
+}
+
